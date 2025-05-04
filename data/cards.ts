@@ -1,0 +1,102 @@
+import { CardData } from "../types/cards";
+
+
+export const cards: CardData[] = [
+    {
+        id: 1,
+        img: "/images/checkoutScreenQ.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 2,
+    },
+    {
+        id: 2,
+        img: "/images/checkoutScreenA.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 2,
+    },
+    {
+        id: 3,
+        img: "/images/dropDownA.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 4,
+    },
+    {
+        id: 4,
+        img: "/images/dropDownQ.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 4,
+    },
+    {
+        id: 5,
+        img: "/images/FittssLawA.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 6,
+    },
+    {
+        id: 6,
+        img: "/images/fittssLawQ.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 6,
+    },
+    {
+        id: 7,
+        img: "/images/HicksLawA.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 8,
+    },
+    {
+        id: 8,
+        img: "/images/hicksLawQ.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 8,
+    },
+    {
+        id: 9,
+        img: "/images/switchA.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 10,
+    },
+    {
+        id: 10,
+        img: "/images/switchQ.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 10,
+    },
+    {
+        id: 11,
+        img: "/images/userPersonaA.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 12,
+    },
+    {
+        id: 12,
+        img: "/images/userPersonaQ.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 12,
+    },
+    {
+        id: 13,
+        img: "/images/wireframeA.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 14,
+    },
+    {
+        id: 14,
+        img: "/images/wireframeQ.svg",
+        matched: false,
+        flipped: false,
+        idOfPair: 14,
+    }];
