@@ -99,4 +99,20 @@ export const cards: CardData[] = [
         matched: false,
         flipped: false,
         idOfPair: 14,
-    }];
+    },
+    {
+        id: 15,
+        img: "/images/kidnapA.svg",
+        matched: true,
+        flipped: false,
+        idOfPair: 20,
+    },
+    // {
+    //     id: 16,
+    //     img: "/images/kidnapQ.svg",
+    //     matched: false,
+    //     flipped: false,
+    //     idOfPair: 16,
+    // },
+
+];

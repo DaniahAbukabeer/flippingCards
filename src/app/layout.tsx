@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Cherry_Bomb_One } from 'next/font/google';
+import { Oi } from 'next/font/google';
+
+const oi = Oi({
+  subsets: ['latin'],
+  weight: '400', // Oi only has one weight
+  display: 'swap',
+});
+
+const cherryBombOne = Cherry_Bomb_One({
+  subsets: ['latin'],
+  weight: '400', // Cherry Bomb One has only 400
+  display: 'swap',
+});
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -9,6 +24,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const cascadiaMono = Geist_Mono({
+  variable: "--font-cascadia-mono",
   subsets: ["latin"],
 });
 
@@ -25,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cherryBombOne.className} antialiased`}
       >
         {children}
       </body>
