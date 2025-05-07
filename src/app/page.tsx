@@ -26,7 +26,7 @@ export default function Home() {
   const [gameOver, setGameOver] = useState(false);
 
   const matchSound = new Audio("/sounds/Yippee.mp3");
-  const larrySound = new Audio("sounds/larry.mp3");
+  // const larrySound = new Audio("sounds/larry.mp3");
   const wompSound = new Audio("sounds/womp.mp3");
   const youdiedSound = new Audio("sounds/YOUDIED.mp3");
   const backgroundSound = new Audio("sounds/background.mp3");
@@ -51,12 +51,12 @@ export default function Home() {
 
     if (clickedCard.idOfPair == 20) {
       setGameOver(true);
-      larrySound.loop = true;
-      larrySound.volume = 0.7;
+      // larrySound.loop = true;
+      // larrySound.volume = 0.7;
       youdiedSound.loop = false;
       youdiedSound.volume = 1;
       youdiedSound.play();
-      larrySound.play();
+      // larrySound.play();
     }
 
     const updatedCards = shuffledCards.map((card) =>

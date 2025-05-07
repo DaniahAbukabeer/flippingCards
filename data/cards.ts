@@ -103,7 +103,7 @@ export const cards: CardData[] = [
     {
         id: 15,
         img: "/images/kidnapA.svg",
-        matched: true,
+        matched: false,
         flipped: false,
         idOfPair: 20,
     },
