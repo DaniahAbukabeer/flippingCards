@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import React, { Suspense } from "react";
+import Analytics from "@/components/Analytics";
 import { Cherry_Bomb_One } from 'next/font/google';
 // import { Oi } from 'next/font/google';
 
@@ -47,6 +50,25 @@ export default function RootLayout({
       <body
         className={`${cherryBombOne.className} antialiased`}
       >
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { page_path: window.location.pathname });
+          `}
+        </Script>
+
+        {/* Client-side analytics helper for SPA route changes */}
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
+
         {children}
       </body>
     </html>
